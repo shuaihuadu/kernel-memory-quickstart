@@ -2,6 +2,8 @@
 
 public sealed class TestConfiguration
 {
+    public static readonly string DocumentRootPath = Path.Join(AppContext.BaseDirectory, "docs");
+
     private readonly IConfigurationRoot _configurationRoot;
 
     private static TestConfiguration? _instance;
@@ -15,6 +17,23 @@ public sealed class TestConfiguration
     {
         _instance = new TestConfiguration(configurationRoot);
     }
+
+    public static Microsoft.KernelMemory.AzureOpenAIConfig KernelMemoryAzureOpenAIConfig => new Microsoft.KernelMemory.AzureOpenAIConfig
+    {
+        APIKey = AzureOpenAI.ApiKey,
+        Auth = Microsoft.KernelMemory.AzureOpenAIConfig.AuthTypes.APIKey,
+        Deployment = AzureOpenAI.DeploymentName,
+        Endpoint = AzureOpenAI.Endpoint
+    };
+
+    public static Microsoft.KernelMemory.AzureOpenAIConfig KernelMemoryAzureOpenAIEmbeddingConfig => new Microsoft.KernelMemory.AzureOpenAIConfig
+    {
+        APIKey = AzureOpenAIEmbeddings.ApiKey,
+        Auth = Microsoft.KernelMemory.AzureOpenAIConfig.AuthTypes.APIKey,
+        Deployment = AzureOpenAIEmbeddings.DeploymentName,
+        Endpoint = AzureOpenAIEmbeddings.Endpoint,
+        APIType = Microsoft.KernelMemory.AzureOpenAIConfig.APITypes.EmbeddingGeneration
+    };
 
     public static OpenAIConfig OpenAI => LoadSection<OpenAIConfig>();
     public static AzureOpenAIConfig AzureOpenAI => LoadSection<AzureOpenAIConfig>();

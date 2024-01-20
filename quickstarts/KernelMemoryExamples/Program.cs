@@ -1,4 +1,4 @@
-﻿const string filter = "Example20_HuggingFace";
+﻿const string filter = "Example003_SummarizingDocuments";
 
 LoadUserSecrets();
 
