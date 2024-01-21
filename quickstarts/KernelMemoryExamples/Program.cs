@@ -1,4 +1,4 @@
-﻿const string filter = "Example003_SummarizingDocuments";
+﻿const string filter = "Example001_WebClient";
 
 LoadUserSecrets();
 

@@ -1,6 +1,6 @@
 ﻿namespace KernelMemoryExamples;
 
-public static class Example002_SemanticKernelPlugin
+public static class KM0002_SemanticKernelPlugin
 {
     public static async Task RunAsync()
     {

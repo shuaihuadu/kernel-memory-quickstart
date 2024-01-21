@@ -1,6 +1,6 @@
 ﻿namespace KernelMemoryExamples;
 
-public static class Example001_UploadAndAsk
+public static class KM0001_UploadAndAsk
 {
     public static async Task RunAsync()
     {

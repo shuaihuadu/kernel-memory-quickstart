@@ -1,6 +1,6 @@
 ﻿namespace KernelMemoryExamples;
 
-public static class Example003_SummarizingDocuments
+public static class KM0003_SummarizingDocuments
 {
     public static async Task RunAsync()
     {
