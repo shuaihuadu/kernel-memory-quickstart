@@ -13,3 +13,4 @@
 appsettings.Production.json
 /quickstarts/KernelSyntaxExamples/appsettings.Development.json
 /quickstarts/KernelMemoryExamples/appsettings.Development.json
+/quickstarts/KernelMemoryExamples/appsettings.json

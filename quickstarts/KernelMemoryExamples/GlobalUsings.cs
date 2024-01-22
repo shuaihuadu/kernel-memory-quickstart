@@ -3,6 +3,7 @@ global using KernelMemoryExamples.Reliability;
 global using Microsoft.Extensions.Configuration;
 global using Microsoft.Extensions.Logging;
 global using Microsoft.KernelMemory;
+global using Microsoft.KernelMemory.AI.OpenAI;
 global using Microsoft.SemanticKernel;
 global using System.Reflection;
 global using System.Runtime.CompilerServices;

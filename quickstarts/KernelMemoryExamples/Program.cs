@@ -1,4 +1,4 @@
-﻿const string filter = "Example001_WebClient";
+﻿const string filter = "Example003_Serverless";
 
 LoadUserSecrets();
 
