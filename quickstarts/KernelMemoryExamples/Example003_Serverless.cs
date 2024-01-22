@@ -20,7 +20,7 @@ public static class Example003_Serverless
               .BindSection("KernelMemory:Services:AzureOpenAIText", azureOpenAITextConfig)
               .BindSection("KernelMemory:Services:AzureOpenAIEmbedding", azureOpenAIEmbeddingConfig)
               .BindSection("KernelMemory:Services:AzureAIDocIntel", azureAIDocIntelConfig)
-              .BindSection("KernelMemory:Services:SearchClient", searchClientConfig);
+              .BindSection("KernelMemory:Retrieval:SearchClient", searchClientConfig);
 
         IKernelMemory kernelMemory = new KernelMemoryBuilder()
             .WithAzureOpenAITextGeneration(azureOpenAITextConfig, new DefaultGPTTokenizer())
