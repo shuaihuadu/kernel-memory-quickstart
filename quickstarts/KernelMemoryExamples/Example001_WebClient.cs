@@ -80,34 +80,34 @@ public static class Example001_WebClient
                 Console.WriteLine("doc003 already uploaded.");
             }
 
-            toDelete.Add("webPage1");
+            //toDelete.Add("webPage1");
 
-            if (!await memoryWebClient.IsDocumentReadyAsync("webPage1"))
-            {
-                Console.WriteLine("Uploading https://raw.githubusercontent.com/microsoft/kernel-memory/main/README.md");
+            //if (!await memoryWebClient.IsDocumentReadyAsync("webPage1"))
+            //{
+            //    Console.WriteLine("Uploading https://raw.githubusercontent.com/microsoft/kernel-memory/main/README.md");
 
-                await memoryWebClient.ImportWebPageAsync("https://raw.githubusercontent.com/microsoft/kernel-memory/main/README.md", documentId: "webPage1");
-            }
-            else
-            {
-                Console.WriteLine("webPage1 already uploaded.");
-            }
+            //    await memoryWebClient.ImportWebPageAsync("https://raw.githubusercontent.com/microsoft/kernel-memory/main/README.md", documentId: "webPage1");
+            //}
+            //else
+            //{
+            //    Console.WriteLine("webPage1 already uploaded.");
+            //}
 
-            toDelete.Add("webPage2");
+            //toDelete.Add("webPage2");
 
-            if (!await memoryWebClient.IsDocumentReadyAsync("webPage2"))
-            {
-                Console.WriteLine("Uploading https://raw.githubusercontent.com/microsoft/kernel-memory/main/docs/SECURITY_FILTERS.md");
+            //if (!await memoryWebClient.IsDocumentReadyAsync("webPage2"))
+            //{
+            //    Console.WriteLine("Uploading https://raw.githubusercontent.com/microsoft/kernel-memory/main/docs/SECURITY_FILTERS.md");
 
-                await memoryWebClient.ImportWebPageAsync(
-                    "https://raw.githubusercontent.com/microsoft/kernel-memory/main/docs/SECURITY_FILTERS.md",
-                    documentId: "webPage2",
-                    steps: Constants.PipelineWithoutSummary);
-            }
-            else
-            {
-                Console.WriteLine("webPage2 already uploaded.");
-            }
+            //    await memoryWebClient.ImportWebPageAsync(
+            //        "https://raw.githubusercontent.com/microsoft/kernel-memory/main/docs/SECURITY_FILTERS.md",
+            //        documentId: "webPage2",
+            //        steps: Constants.PipelineWithoutSummary);
+            //}
+            //else
+            //{
+            //    Console.WriteLine("webPage2 already uploaded.");
+            //}
         }
 
         Console.WriteLine("\n====================================\n");
